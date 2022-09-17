@@ -1,8 +1,9 @@
 import streamlit as st
-import pickle
+import joblib
+
 
 # Carga del modelo de prediccion
-modelo = pickle.load(open("smoking_model.pkl", "rb"))
+modelo = joblib.load("smoking_model.joblib")
 
 # Titulo
 st.title("Smoking Test")
