@@ -12,7 +12,7 @@ st.title("Smoking Test")
 st.markdown("""
             El siguiente test presenta la capacidad de clasificar a una persona como fumadora o
             no fumadora en función de unos determinados valores antropométricos y biológicos con
-            una exactitud del 83,69%
+            una exactitud del 82,18%
             
             El test se ha obtenido a partir de una muestra de 44.553 personas de ámbos géneros y
             de distintas edades.
