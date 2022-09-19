@@ -22,28 +22,28 @@ st.markdown("""
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    ALT = st.number_input("Alanina aminotransferasa", min_value=0.0, value=7.0, step=0.1)
-    AST = st.number_input("Aspartato aminotransferasa", min_value=0.0, value=5.0, step=0.1)
-    colesterol = st.number_input("Colesterol", min_value=0, value=200)
-    LDL = st.number_input("Lipoproteína baja densidad", min_value=0, value=30)
-    HDL = st.number_input("Lipoproteína alta densidad", min_value=0, value=40)
-    GTP = st.number_input("Guanosina trifosfato", min_value=0, value=6)
+    ALT = st.number_input("Alanina aminotransferasa (U/L)", min_value=0.0, value=7.0, step=0.1)
+    AST = st.number_input("Aspartato aminotransferasa (U/L)", min_value=0.0, value=5.0, step=0.1)
+    colesterol = st.number_input("Colesterol (mg/dL)", min_value=0, value=200)
+    LDL = st.number_input("Lipoproteína baja densidad (mg/dL)", min_value=0, value=30)
+    HDL = st.number_input("Lipoproteína alta densidad (mg/dL)", min_value=0, value=40)
+    GTP = st.number_input("Guanosina trifosfato (U/L)", min_value=0, value=6)
 
 with col2:
-    glucosa = st.number_input("Glucosa en ayuno", value=70, min_value=0)
-    hemoglobina = st.number_input("Hemoglobina", min_value=0.0, value=12.0, step=0.1)
-    trigliceridos = st.number_input("Triglicéridos", min_value=0, value=50)
+    glucosa = st.number_input("Glucosa en ayuno (mg/dL)", value=70, min_value=0)
+    hemoglobina = st.number_input("Hemoglobina (g/dL)", min_value=0.0, value=12.0, step=0.1)
+    trigliceridos = st.number_input("Triglicéridos (mg/dL)", min_value=0, value=50)
     edad = st.number_input("Edad", value=18, min_value=0)
-    caries_dental = st.selectbox("Caries dental", options=("SI", "NO"))
-    presencia_sarro = st.selectbox("Presencia de sarro dental", options=("SI", "NO"))
+    caries_dental = st.selectbox("Caries dental (SI/NO)", options=("SI", "NO"))
+    presencia_sarro = st.selectbox("Presencia de sarro dental (SI/NO)", options=("SI", "NO"))
 
 with col3:
-    diastolica = st.number_input("Presión arterial diastólica", min_value=0, value=60)
-    sistolica = st.number_input("Presión arterial sistólica", min_value=0, value=120)
-    altura = st.number_input("Altura en centímetros", min_value=0, value=150)
-    peso = st.number_input("Peso corporal en kilogramos", min_value=0, value=60)
-    cintura = st.number_input("Anchura de cintura en centímetros", min_value=0, value=80)
-    genero_masculino = st.selectbox("Género masculino", options=("SI", "NO"))
+    diastolica = st.number_input("Presión arterial diastólica (mmHg)", min_value=0, value=60)
+    sistolica = st.number_input("Presión arterial sistólica (mmHg)", min_value=0, value=120)
+    altura = st.number_input("Altura (cm)", min_value=0, value=150)
+    peso = st.number_input("Peso corporal (kg)", min_value=0, value=60)
+    cintura = st.number_input("Anchura de cintura (cm)", min_value=0, value=80)
+    genero_masculino = st.selectbox("Género masculino (SI/NO)", options=("SI", "NO"))
 
 caries = 1 if caries_dental == "SI" else 0
 hombre = 1 if genero_masculino == "SI" else 0
